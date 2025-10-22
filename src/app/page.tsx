@@ -3,7 +3,7 @@ import { createClient } from '@/utils/supabase/server';
 
 export default async function test() {
   const supabase = await createClient();
-  const { data, error } = await supabase.from("test").select()
+  const { data} = await supabase.from("test").select()
 
 console.log (data);
   
